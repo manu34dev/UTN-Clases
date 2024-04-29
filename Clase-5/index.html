@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h2>informacion de usuario</h2>
+        <div>
+        <label for="username">Escriba el nombre de usuraio</label><!-- label es una regla de accesibilidad -->
+        <input type="text" id="username" placeholder="Maximo Cozzeti" required minlength="4" maxlength="16"><!--placeholder es para dar ejemplos-->
+        </div>
+        <div>
+        <label for="password">Escriba su contraseña</label>
+        <input type="password" id="password" required minlength="6" maxlength="16"><!-- required es para pedir una validacion -->
+        </div>
+        <div>
+            <label for="email">Ingrese su email</label><!-- imput para email -->
+            <input type="email" name="" id="email">
+        </div>
+        <div>
+            <label for="">ingrese la fecha</label>
+            <input type="date"><!-- input para fechas -->
+            </div>
+            <div>
+            <input type="file"> <!-- input para archivos -->
+        </div>
+        <div>
+            <input type="number" max="20" min="1"> <!-- input para numeros -->
+        </div>
+        <div>
+            <input type="range" max="10" min="0" value="0" ><!-- input para medidas del 0 al 10 -->
+        </div>
+        <div>
+            <h2>De que te gusta la empanada?</h2><!-- check clasico -->
+            <label for="humita"> humita</label>
+            <input type="checkbox" name="" id="humita">
+            <label for="jyq"> JyQ</label>
+            <input type="checkbox" name="" id="jyq">
+            <label for="meat"> carne</label>
+            <input type="checkbox" name="" id="meat">
+        </div>
+        <div>
+            <h2>De que te gusta la empanada?</h2><!-- mismo que check, se puede elegir solo una opcino -->
+            <label for="humita"> humita</label>
+            <input type="radio" name="empanada preferida" id="humita">
+            <label for="jyq"> JyQ</label>
+            <input type="radio" name="empanada preferida" id="jyq">
+            <label for="meat"> carne</label>
+            <input type="radio" name="empanada preferida" id="meat">
+        </div>
+        <div>
+            <label for="mensaje">ingrese un mensaje</label><!-- input para dejar texto -->
+            <textarea placeholder="me gusta la empanada de humita" required rows="5" cols="7"></textarea>
+        </div>
+        <div>
+            <label for="pais">Sleccione un Pais</label> <!-- input de seleecion -->
+            <select name="" id="pais">
+                <option value="AR">Argentina</option>
+                <option value="FR">Fracia</option>
+                <option value="null" selected disabled>No seleccionado</option><!-- selected para que aparezca seleccionada la opcion por defecto, diable para que ya no pueda volver a ser seleccionada -->
+            </select>
+        </div>
+        <button type="submit">Enviar </button><!-- boton generico -->
+        <input type="button"value="confirmar"><!-- boton con texto -->
+    </form>
+</body>
+</html> 
