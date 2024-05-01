@@ -1,0 +1,20 @@
+/* selector un elemento, ya sea button, h1 o h3 */
+button{
+    color: blueviolet;
+}
+/* selector de clase(sea cual sea el nombre que le pusiste al a clase) */
+.peperino {
+    color: red;
+}
+/* selector de ID, ID siempre debe ser unico */
+#btn-esp{
+    color: green;
+}
+.spr-esp{
+    background-color: rgb(5, 61, 78);
+}
+/* selector universal (seleccionar todo el HTML, menos las clases y IDs o elementos sin especificar) */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* selector importante ! cambia todo */
