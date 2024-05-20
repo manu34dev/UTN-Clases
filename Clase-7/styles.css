@@ -1,4 +1,5 @@
 /* normalize/normalizar (quitar propiedades molestas) */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *{
     box-sizing: border-box;
     margin: 0;
@@ -35,8 +36,8 @@ header{
     padding: 32px ;
 }
 header input{
-    width: 344px;
-    padding: 10px 15px;
+    width: 100%;
+    padding: 10px 40px 10px 16px;
     background-color: white;
     border: none;
     font-size: 16px;
@@ -67,3 +68,20 @@ a:hover{ /* pseudo clase */
     font-size: 20px;
     transition: 1s ease-in-out;/* transicion en X tiempo */
 }
+.buscador-container{
+    width: 344px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.buscador-container button{
+    position: absolute;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+    color:#999999;
+    border-left: 1px #999999 solid;
+    padding-left: 10px;
+    height: 60%;
+}
+

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.padre{
+    height: 100vh;
+    background-color: green;
+    display: flex;/* funciona sobre el padre */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+}
+.padre .hijo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    z-index: 2;/* capas mientras mayor el valor, mas adeltante va a estar */
+}
+.padre .hijo:nth-child(2){
+    position: fixed;/* funciona sobre el hijo (relativo a la posicion original) */
+    top: 20px; /* top vale mas que bottom */
+    right: 300px;/* left vale mas que right */
+    background-color: red;
+    z-index: 1;/* capas mientras mayor el valor, mas adeltante va a estar*/
+}

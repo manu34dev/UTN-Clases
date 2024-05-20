@@ -1,0 +1,34 @@
+/* mobile first*/
+/* desktop first */
+
+/* ejemplo mobile fisrt */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.padre{
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo{
+    width: 80vw;
+    height: 200px;
+    border: 1px solid black;
+    background-color: red;
+}
+/* cuando el ancho de mi pantalla sea MAYOR a 1000px */
+/* media querie siempre al final del codigo */
+@media screen and (min-width: 1000px){
+    .padre{
+        background-color: aquamarine;
+    }
+    .padre .hijo{
+        background-color: blue;
+    }
+}

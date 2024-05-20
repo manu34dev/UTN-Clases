@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.padre{
+        display: flex;
+        height: 100vh;
+        background-color: green;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.hijo{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px ;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
