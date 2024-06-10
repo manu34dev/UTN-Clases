@@ -6,7 +6,7 @@ else if (dia == 1){
     console.log("Lunes")
 }
 else if (dia == 2){
-    console.log("Marte")
+    console.log("Martes")
 }
 else if (dia == 3){
     console.log("Miercoles")

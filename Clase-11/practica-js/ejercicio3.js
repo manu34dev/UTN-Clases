@@ -17,11 +17,11 @@ if (eje1 >0 && eje2 >0 && eje3 >0) {
         console.log("triangulo equiatero")
     }
     //Isósceles: dos lados son iguales.
-    if (eje1 == eje2 || eje1 == eje3 || eje2 == eje3) {
+    else if (eje1 == eje2 || eje1 == eje3 || eje2 == eje3) {
         console.log("triangulo Isóceles")
     }
     //Escaleno: todos los lados son diferentes.
-    if (eje1 != eje2 && eje1 != eje3 && eje2 != eje3) {
+    else {
         console.log("triangulo escaleno")
     }
 }

@@ -1,8 +1,9 @@
-let temperatura= prompt ("ingrese temperatura")
+let temperatura= prompt ('ingrese temperatura')
 
-if (isNaN(temperatura))
+if (temperatura === '' || temperatura === null || isNaN(temperatura))
     console.log("Temperatura no valida");
-else if(temperatura <0){
+else{
+if(temperatura <0){
     console.log ("Solido")
 }
 else if (temperatura >0 && temperatura <99){
@@ -10,4 +11,5 @@ else if (temperatura >0 && temperatura <99){
 }
 else if (temperatura >=100){
     console.log ("Gaseoso")
+}
 }
